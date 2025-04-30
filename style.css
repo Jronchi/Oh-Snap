@@ -1,5 +1,6 @@
 body{
-    background: #ebebeb
+    background: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p{
@@ -28,7 +29,8 @@ h2{color: black}
   .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,42 +43,62 @@ h2{color: black}
   }
 
   .logo img {
-    height: 100px
-  }
-
-  .spaziosopra {
-    height: 105px;
+    height: 70px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+    margin-left: 10px;
   }
   
   .nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 60px;
+    font-size: 17px;
   }
   
   .nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s;
+    /* transition: color 0.3s; */
+    display: inline-block;
   }
   
   .nav a:hover {
     color: #7e0b4e;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
   }
   
   .actions .btn {
     background-color: #7e0b4e;
     color: white;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 1.5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
+    display: inline-block;
+    /* transition: background-color 0.3s; */
+    margin-right: -100px;
+
+    border-width: 1.5px;
+    border-color: #ffffff;
+    border-style:solid;
   }
   
   .actions .btn:hover {
-    background-color: #7e0b4e;
+    background-color: #61093c;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+
+  .banner{
+    background-image: url("immagini/schermata0_snap.jpg");
+    height: 710px;
+    background-size: cover;       /* o contain */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 30px;
   }
   
   /* Responsive Design: il design cambia se riduco le dimensioni della scheda */
