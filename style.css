@@ -1,0 +1,110 @@
+body{
+    background: #ebebeb
+}
+
+p{
+    color: black
+}
+
+h1,
+h2{color: black}
+
+.evi{color: #000}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stile dell'header */
+  .header {
+    background-color: #2c2a2a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .logo img {
+    height: 100px
+  }
+
+  .spaziosopra {
+    height: 105px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #7e0b4e;
+  }
+  
+  .actions .btn {
+    background-color: #7e0b4e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .actions .btn:hover {
+    background-color: #7e0b4e;
+  }
+  
+  /* Responsive Design: il design cambia se riduco le dimensioni della scheda */
+  @media (max-width: 768px) {
+    .nav ul {
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 200px;
+      display: none;
+    }
+  
+    .nav ul.active {
+      display: flex;
+    }
+  
+    .nav-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-toggle span {
+      background: #ffffff;
+      display: block;
+      height: 3px;
+      margin: 5px 0;
+      width: 25px;
+    }
+  }
