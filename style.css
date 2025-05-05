@@ -174,12 +174,15 @@ h2{color: black}
     padding: 15px;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .card {
     background-color: #eeeded;
     border-radius: 15px;
     width: 250px;
+    height: min-content;
+    overflow: hidden;
     padding: 15px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -190,7 +193,7 @@ h2{color: black}
 
   .card:hover {
     transform: scale(1.05);
-    z-index: 2;
+    z-index: 5;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
   }
 
