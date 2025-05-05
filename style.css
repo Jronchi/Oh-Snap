@@ -1,6 +1,6 @@
 body{
-    background: #ebebeb;
-    font-family: "Arial", sans-serif;
+    background: #ffffff;
+    font-family: "Sansation", sans-serif;
 }
 
 p{
@@ -20,16 +20,17 @@ h2{color: black}
   
   /* Stile dell'header */
   .header {
-    background-color: #2c2a2a;
+    background-color: #101010;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 100;
   }
   
   .container {
     width: 100%;
     max-width: 1200px;
-    /* margin: 0 auto; */
+    height: 85px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -65,7 +66,7 @@ h2{color: black}
   }
   
   .nav a:hover {
-    color: #7e0b4e;
+    color: #ae0ac7;
     transform: scale(1.2);
     transition-duration: 0.5s;
   }
@@ -92,28 +93,50 @@ h2{color: black}
     transition-duration: 0.5s;
   }
 
-  .banner{
+  .banner {
     background-image: url("immagini/schermata0_snap.jpg");
     height: 710px;
     background-size: cover;       /* o contain */
     background-position: center;
     background-repeat: no-repeat;
-    background-position-y: 30px;
+    background-position-y: 20px;
   }
 
   .space{
     height: 85px;
   }
 
-  .testo{
+  .tcontainer{
+    width: 100%;
+    max-width: fit-content;
+    margin: 30px;
     display: flex;
-    justify-content: center;
-    font-family:"Bebas Neue", sans-serif;
-    font-size: 30px;
-    font-style: normal;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  
+  .h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family:"Sansation", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    padding: 15px;
+  }
+
+  .p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Onest", sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    padding: 15px;
+  }
+
+
   /* Responsive Design: il design cambia se riduco le dimensioni della scheda */
   @media (max-width: 768px) {
     .nav ul {
@@ -147,23 +170,28 @@ h2{color: black}
   /*carte*/
   .card-container {
     display: flex;
+    justify-content: center;
+    padding: 15px;
     gap: 20px;
     flex-wrap: wrap;
   }
 
   .card {
-    background-color: #1e1e1e;
+    background-color: #eeeded;
     border-radius: 15px;
     width: 250px;
     padding: 15px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    will-change: transform;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40);
+    z-index: 1;
   }
 
   .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.6);
+    z-index: 2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
   }
 
   .card img {
@@ -171,11 +199,30 @@ h2{color: black}
     border-radius: 10px;
   }
 
-  .card h2 {
-    margin: 10px 0 5px;
+  .card_nome {
+    font-size: 14px;
+    color: #000000;
   }
 
-  .card p {
-    font-size: 14px;
-    color: #ccc;
+  .card p.abilita {
+    display: none;
+    color: #000000;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .card:hover p.abilita {
+    display: block;
+  }  
+
+  footer {
+    background: #101010;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+  }
+
+  footer p{
+    color: #ffffff;
   }
