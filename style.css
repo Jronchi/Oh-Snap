@@ -20,7 +20,7 @@ h2{color: black}
   
   /* Stile dell'header */
   .header {
-    background-color: #101010;
+    background-color: #242424;
     position: fixed;
     width: 100%;
     top: 0;
@@ -37,22 +37,39 @@ h2{color: black}
     justify-content: space-between;
   }
 
-  .scarica-cont{
+  .t1container{
     width: 100%;
-    height: auto;
-    margin: 0;
+    max-width: fit-content;
+    margin: 30px;
     display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .col{
-    width: 50%;
-    background-color: #ffffff;
-    border: #ae0ac7;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+  }
+  
+  .t2container {
+    width: 100%;
+    max-width: fit-content;
+    margin: 30px;
     display: flex;
     justify-content: center;
   }
+  
+  .t2container .text {
+    align-content: center;
+    font-size: larger;
+    text-align: center;
+  }
+/* 
+  .t2container .text h1{
+    margin-bottom: 10px;
+  } */
+  
+  .t2container img {
+    width: 40%;
+    object-fit: contain;
+  }
+
 
   .logo {
     align-items: center;
@@ -89,23 +106,23 @@ h2{color: black}
   }
   
   .actions {
-    background-color: #7e0b4e;
+    background-color: #d010ee57;
     color: white;
     padding: 10px 20px;
-    border-radius: 1.5px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     /* transition: background-color 0.3s; */
     margin-right: -100px;
 
-    border-width: 1.5px;
+    border-width: 2px;
     border-color: #ffffff;
     border-style:solid;
   }
   
   .actions:hover {
-    background-color: #61093c;
+    background-color: #c50ce2ad;
     transform: scale(1.1);
     transition-duration: 0.5s;
   }
@@ -121,16 +138,6 @@ h2{color: black}
 
   .space{
     height: 85px;
-  }
-
-  .tcontainer{
-    width: 100%;
-    max-width: fit-content;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
   }
 
   .h1{
@@ -197,7 +204,8 @@ h2{color: black}
   .card {
     background-color: #eeeded;
     border-radius: 15px;
-    width: 250px;
+    min-width: 250px;
+    width: min-content;
     height: min-content;
     overflow: hidden;
     padding: 15px;
@@ -236,7 +244,7 @@ h2{color: black}
   }  
 
   footer {
-    background: #101010;
+    background: #242424;
     text-align: center;
     padding: 30px;
     position: relative;
@@ -246,3 +254,36 @@ h2{color: black}
   footer p{
     color: #ffffff;
   }
+
+
+/* Scarica */
+.scarica-container{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.colonna{
+  width: 35%;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* border: red;
+  border-style: solid; */
+}
+
+.link_scarica{
+  text-decoration: none;
+}
+
+.scarica img{
+  height: 300px;
+  width: auto;
+}
