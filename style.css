@@ -37,6 +37,23 @@ h2{color: black}
     justify-content: space-between;
   }
 
+  .scarica-cont{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .col{
+    width: 50%;
+    background-color: #ffffff;
+    border: #ae0ac7;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
   .logo {
     align-items: center;
     justify-content: center;
@@ -71,7 +88,7 @@ h2{color: black}
     transition-duration: 0.5s;
   }
   
-  .actions .btn {
+  .actions {
     background-color: #7e0b4e;
     color: white;
     padding: 10px 20px;
@@ -87,7 +104,7 @@ h2{color: black}
     border-style:solid;
   }
   
-  .actions .btn:hover {
+  .actions:hover {
     background-color: #61093c;
     transform: scale(1.1);
     transition-duration: 0.5s;
