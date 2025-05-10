@@ -68,9 +68,42 @@ h2{color: black}
   .t2container img {
     width: 40%;
     object-fit: contain;
+    border-radius: 20px;
   }
 
+  .t3container {
+    width: 100%;
+    max-width: fit-content;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+  }
 
+  .t3container .text {
+    align-content: center;
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+  }
+
+  .t3container img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  .t3colonna{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: rgb(220, 220, 220);
+    border-style: solid;
+  }
+  
   .logo {
     align-items: center;
     justify-content: center;
@@ -270,7 +303,7 @@ h2{color: black}
 }
 
 .colonna{
-  width: 35%;
+  width: 45%;
   background-color: #ffffff;
   align-items: center;
   display: flex;
@@ -284,6 +317,6 @@ h2{color: black}
 }
 
 .scarica img{
-  height: 300px;
+  height: 450px;
   width: auto;
 }
