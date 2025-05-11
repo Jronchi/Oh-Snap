@@ -103,6 +103,12 @@ h2{color: black}
     border: rgb(220, 220, 220);
     border-style: solid;
   }
+
+  .t4{
+    align-content: center;
+    text-align: start;
+    font-size: large;
+  }
   
   .logo {
     align-items: center;
