@@ -36,7 +36,25 @@
       </div>
   </header>
   
-  <div class="banner"></div>
+  <div class="banner">
+    <img id="randomImage" src="" alt="Immagine casuale" width="1382">
+
+    <script>
+      // Lista delle immagini nella cartella img/
+      const immagini = [
+        'immagini/0.jpg',
+        'immagini/1.jpg',
+        'immagini/2.jpg',
+        'immagini/3.jpg'
+      ];
+
+      // Seleziona un'immagine a caso
+      const immagineCasuale = immagini[Math.floor(Math.random() * immagini.length)];
+
+      // Imposta l'immagine nel tag <img>
+      document.getElementById('randomImage').src = immagineCasuale;
+    </script>
+  </div>
 
   <div class="t2container"> 
     <div class="text">
@@ -101,7 +119,7 @@
       <div class="text">
         <h2>Artgerm (Stanley Lau)</h2>
         <p>
-          Artgerm è celebre per il suo stile realistico e dettagliato. In Marvel Snap, ha creato varianti come quella di Mystique o Magik, catturando l'essenza del personaggio con una qualità pittorica che ricorda le illustrazioni da copertina di alta classe.
+          Artgerm è celebre per il suo stile realistico e dettagliato. In Marvel Snap, ha creato varianti come quella di Mystique o White Queen, catturando l'essenza del personaggio con una qualità pittorica che ricorda le illustrazioni da copertina di alta classe.
         </p>
       </div>
       <img src="immagini/artgerm.webp" style="height: 300px; width: auto;">
