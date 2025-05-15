@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -24,14 +23,14 @@
         <nav class="nav">
           <ul>
             <li><a href="0-index.html">HOME</a></li>
-            <li><a href="carte.html">CARTE</a></li>
-            <li><a href="gameplay.html">GAMEPLAY</a></li>
-            <li><a href="community.html">COMMUNITY</a></li>
-            <li><a href="https://youtu.be/ss3NhlKY86M?t=50">ASSISTENZA</a></li>
+            <li><a href="pagine/carte.html">CARTE</a></li>
+            <li><a href="pagine/gameplay.html">GAMEPLAY</a></li>
+            <li><a href="pagine/community.html">COMMUNITY</a></li>
+            <li><a href="https://youtu.be/ss3NhlKY86M?t=50" target="_blank">ASSISTENZA</a></li>
           </ul>
         </nav>
         <div>
-          <a class="actions" href="scarica.html">SCARICA</a>
+          <a class="actions" href="pagine/scarica.html">SCARICA</a>
         </div>
       </div>
   </header>
@@ -39,10 +38,10 @@
   <div class="space"></div>
 
   <div class="banner">
-    <img id="randomImage" src="" alt="Immagine casuale" width="1382">
+    <img id="randomImage" src="" alt="Immagine casuale" width="100%">
 
     <script>
-      // Lista delle immagini nella cartella img/
+
       const immagini = [
         'immagini/0.jpg',
         'immagini/1.jpg',
@@ -50,10 +49,8 @@
         'immagini/3.jpg'
       ];
 
-      // Seleziona un'immagine a caso
       const immagineCasuale = immagini[Math.floor(Math.random() * immagini.length)];
 
-      // Imposta l'immagine nel tag <img>
       document.getElementById('randomImage').src = immagineCasuale;
     </script>
   </div>
